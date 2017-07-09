@@ -1,0 +1,59 @@
+body{
+    background-color: darkgrey;
+    margin: 0 auto;
+}
+nav{
+    position: relative;
+    padding: 10px;
+    border-bottom: 0.05em solid green;
+    background-color: greenyellow;
+    box-shadow: 1px 1px green;
+}
+ul#navigation{
+    margin: 0 auto;
+    width: 80%;
+    position:relative;
+}
+ul#navigation li{
+    display: inline;
+    padding: 10px;
+    position:relative;
+}
+ul#navigation li a{
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+ul#navigation li:hover ul{
+    visibility: visible;
+}
+ul#navigation ul li ul,ul#navigation ul {
+    visibility: hidden;
+    position: absolute;
+    z-index: 999;
+}
+ul#navigation ul li{
+    clear: both;
+    border-bottom: 2px solid white;
+    background-color: chartreuse;
+    width:100%;
+    display:inline-block;
+}
+ul#navigation ul li ul{
+
+    clear: both;
+    width: 100%;
+}
+ul#navigation ul{
+    top: 38px;
+    left: -40px;
+    width: 205px;
+}
+
+ul#navigation ul li:hover,ul#navigation li:hover{
+    background-color: green;
+}
+section{
+    width: 80%;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+	<script src="js/bootstrap.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<link href="css/carousel.css" rel="stylesheet">
+	<script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+</head>
+<body>
+	<div>
+		<label>2. Địa chỉ giao hàng</label>
+		
+	</div>
+	<div>
+		<p>Bạn muốn giao hàng đến địa chỉ khác?
+			<button type="button" class="btn btn-link">Thêm địa chỉ giao hàng mới</button>
+		</p>
+	</div>
+	<form class="form-horizontal" role="form">
+		<div class="col-sm-2"></div>
+		<div class=" col-md-9">
+			<div class="form-group">
+			    <label class="col-sm-3 control-label">Họ tên</label>
+			    <div class="col-sm-6">
+			      	<input class="form-control" id="hoten" required>
+			    </div>
+			</div>
+			<div class="form-group">
+			    <label class="col-sm-3 control-label" >Điện thoại di động</label>
+			    <div class="col-sm-6">
+			      	<input class="form-control" id="hoten" required>
+			    </div>
+			</div>
+			<div class="form-group">
+			    <label class="col-sm-3 control-label">Tỉnh/Thành phố</label>
+			    <div class="col-sm-6">
+			      	<select class="form-control" required">  
+			      		<option value="">---Chọn---</option>
+		 	 			<option value="">Hà Nội</option>
+		 	 			<option value="">Đà Nẵng</option>
+		 	 			<option value="">TP. Hồ Chí Minh</option>
+		 	 			<option value="">Đà Lạt</option>
+		 	 		</select>
+			    </div>
+			</div>
+			<div class="form-group">
+			    <label class="col-sm-3 control-label">Quận/Huyện</label>
+			    <div class="col-sm-6">
+			      	<select class="form-control" required>
+			      		<option value="">---Chọn---</option>
+		 	 			<option value="">Thanh Khê</option>
+		 	 			<option value="">Ngũ Hành Sơn</option>
+		 	 			<option value="">Hải Châu</option>
+		 	 			<option value="">Cẩm Lệ</option>
+		 	 		</select>
+			    </div>
+			</div>
+			<div class="form-group">
+			    <label class="col-sm-3 control-label">Phường/Xã</label>
+			    <div class="col-sm-6">
+			      	<select class="form-control" required>
+		 	 			<option value="">---Chọn---</option>
+		 	 			<option value="">Tân Chính</option>
+		 	 			<option value="">Thanh Khê Đông</option>
+		 	 			<option value="">Thanh Khê Tây</option>
+		 	 		</select>
+			    </div>
+			</div>
+			<div class="form-group">
+			    <label class="col-sm-3 control-label">Địa chỉ</label>
+			    <div class="col-sm-6">
+			      	<textarea class="form-control" required></textarea>
+			    </div>
+			</div>
+			<div class="form-group">
+			    <label class="col-sm-3 control-label"></label>
+			    <div class="col-sm-6">
+			      	Để nhận hàng thuận tiện hơn bạn vui lòng cho Tiki biết loại địa chỉ
+			    </div>
+			</div>
+			
+			<div class="form-group">
+			    <label class="col-sm-3 control-label">Loại địa chỉ</label>
+			    <div class="col-sm-6" >
+			      	<label class="radio-inline">
+					  	<input type="radio" name="inlineRadioOptions" id="nha" value="option1"> Nhà riêng/ chung cư
+					</label>
+					<label class="radio-inline">
+					  	<input type="radio" name="inlineRadioOptions" id="congty" value="option2"> Cơ quan/ công ty
+					</label>
+			    </div>
+			</div>
+			<div class="form-group">
+			    <label class="col-sm-3 control-label"></label>
+			    <div class="col-sm-6">
+			      	<button type="submit" class="btn btn-info btn-block">Giao đến địa chỉ này</button>
+			    </div>
+			</div>
+			
+		</div>
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+ <script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+ <link rel="stylesheet"
+	href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<script src="js/bootstrap.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<link href="css/carousel.css" rel="stylesheet">
+<script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+<style>
+* {
+	box-sizing: border-box;
+}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+div.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 400px;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+div.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 400px;
+}
+</style>
+</head>
+<body>
+	<div>
+	<h4>  <strong>  1. Khách hàng mới/ Đăng nhập</strong></h4></div>
+	<p style="text-align: center;">Thanh toán hóa đơn trong chỉ một bước với:</p>
+	<div style="text-align: center;">
+		<img src="images/facebook.png" class="img-rounded">
+		&nbsp;Hoặc&nbsp;
+		<img src="images/google.png" class="img-rounded">
+		&nbsp;Hoặc&nbsp;
+		<img src="images/zalo.png" class="img-rounded">
+	</div>
+	<br>
+	<div class="col-md-12">
+		<div class="col-md-8">
+				<div class="tab">
+				  <button class="tablinks" onclick="openCity(event, 'login')" id="defaultOpen">
+				  ĐĂNG NHẬP
+				  </button>
+				  <button class="tablinks" onclick="openCity(event, 'register')">TẠO TÀI KHOẢN</button>
+				</div>
+
+				<div id="login" class="tabcontent">
+					<form>
+						<div class="form-group">
+							<p>Email:</p>
+							<input type ="text" name ="email" id="email" pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/" required title="example@abc.abc" class="form-control">
+						</div>
+						<div class="form-group">
+							<p>Mật khẩu:</p>
+							<input type = "password" name ="pass" id="pass" required class="form-control">
+						</div>
+						<div>
+							<button type="submit" class="btn btn-info btn-block">Đăng nhập</button>
+
+						</div>
+					</form>
+				</div>
+
+				<div id="register" class="tabcontent">
+					<form>
+					 	<div class="form-group">
+							<p>Email:</p>
+							<input type ="text" name ="email" id="email" class="form-control" pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/" required title="example@abc.abc" >
+						</div>
+						<div class="form-group">
+							<p>Mật khẩu:</p>
+							<input type = "password" name ="pass" id="pass" class="form-control">
+						</div>
+						<div class="form-group">
+							<p>Họ tên:</p>
+							<input type = "text" name ="hoten" id="hoten" class="form-control">
+						</div>
+						<span>Khi bạn nhấn Đăng ký, bạn đã đồng ý thực hiện mọi giao dịch buôn bán theo <button type="button" class="btn btn-link">điều kiện sử dụng và chính sách của Tiki</button></span>
+						<div>
+							<button type="submit" class="btn btn-warning btn-block">Đăng ký</button>
+						</div>
+					</form>
+				</div>
+		</div>
+		<div class="col-md-4">
+			<table class="table">
+				<thead>
+					<tr>
+						<td><strong>Đơn hàng</strong> (1 sản phẩm)</td>
+						<th><a href="GioHang.html" class="btn btn-default active" role="button">&nbsp;&nbsp;Sửa&nbsp;&nbsp;</a></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1x Khi lỗi thuộc về những vì sao</td>
+						<td>74.000 <u>đ</u></td>
+					</tr>
+					<tr>
+						<td>Tạm tính</td>
+						<td>74.000 <u>đ</u></td>
+					</tr>
+					<tr>
+						<th>Thành tiền</th>
+						<th style="color: red;font-size: 20px;">74.000 <u>đ</u></th>
+					</tr>
+				</tbody>
+			</table>
+				
+		</div>
+	</div>
+	
+</body>
+	<script>
+	function openCity(evt, cityName) {
+	    var i, tabcontent, tablinks;
+	    tabcontent = document.getElementsByClassName("tabcontent");
+	    for (i = 0; i < tabcontent.length; i++) {
+	        tabcontent[i].style.display = "none";
+	    }
+	    tablinks = document.getElementsByClassName("tablinks");
+	    for (i = 0; i < tablinks.length; i++) {
+	        tablinks[i].className = tablinks[i].className.replace(" active", "");
+	    }
+	    document.getElementById(cityName).style.display = "block";
+	    evt.currentTarget.className += " active";
+	}
+
+	// Get the element with id="defaultOpen" and click on it
+	document.getElementById("defaultOpen").click();
+	
+
+	//hàm kiểm tra đăng nhập
+	// function checkLogin(){
+	// 		var email = document.getElementById("email").value;
+	// 		var pass = document.getElementById("pass").value;
+	// 		var  pattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+	// 		if(pattern.test(email) == false)
+	// 			alert("email was wrong format");
+	// 		else if(email == "" || pass =="")
+	// 			alert("Vui lòng nhập thông tin!!! ");
+	// 		else if(email== "admin@gmail.com" && pass =="admin")
+	// 				alert("Xin chào Admin");
+	// 		else  {
+	// 				confirm("Bạn chưa có tài khoản? Hãy đăng ký!!!");
+	// 				//document.location.href = "register.html";
+					
+	// 			};
+	// 	}
+	</script>
+
+
+
+</html> 

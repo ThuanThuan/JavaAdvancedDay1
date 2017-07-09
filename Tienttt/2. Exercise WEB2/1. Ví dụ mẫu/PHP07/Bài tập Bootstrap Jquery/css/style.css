@@ -1,0 +1,30 @@
+.logo-container img {
+    width: 100%;
+    height: auto;
+}
+nav.navbar-default{
+    background:yellow;
+    /*background:#337ab7;*/
+    /*padding-left: 75px;*/
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: black;
+    background-color: #337ab7;
+}
+.navbar-default .navbar-nav>li>a{
+    color: black;
+    background-color: transparent;
+    width: 200px;
+    text-align: center;
+    font-weight: bold;
+}
+.navbar-default .navbar-nav>li>a:hover{
+    color: black;
+    background-color: red;
+}
+.modal-footer {
+    /*padding-left: 105px;*/
+    text-align: left;
+    /*border-top: 1px solid #ca1616;*/
+    background: yellow;
+}
